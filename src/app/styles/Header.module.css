@@ -1,0 +1,84 @@
+
+
+.navContainer {
+
+    width: 100%; /* Makes the nav container span the full width */                                                                                                                  
+    height: 100px; /* Adjust height as per your requirement */
+    background-color: rgb(36, 36, 36);
+  }
+
+.navItemsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.gameName {
+    color: #ffffff;
+    margin-left: 4rem;
+    margin-top: 0.7rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5); /* Adds a subtle shadow for depth */
+    transform: scale(1); /* Base scale for smooth hover transition */
+}
+
+.gameName:hover {
+    color: rgb(0, 0, 0);
+    margin-left: 4.1rem; /* Adjusted for a smoother move */
+    transform: scale(1.01); /* Slightly enlarges the text on hover */
+    text-shadow: 4px 4px 12px rgba(0, 255, 255, 0.7); /* Brightened shadow effect */
+    transition: all 0.9s ease; /* Smoother transition timing */
+    letter-spacing: 3px; /* Adds a cool spacing effect on hover */
+}
+
+.headerSpan {
+    text-shadow: 4px 4px 12px rgba(0, 255, 255, 0.7); /* Brightened shadow effect */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navItemsList {
+    display: flex;
+}
+
+.navItems {
+    background-color: rgba(0, 255, 255, 0.7);
+    margin: 2rem;
+    width: 150px; /* Adjusted width slightly for a better visual */
+    height: 40px; /* Increased height for a bolder look */
+    padding: 0.2rem 0;
+    text-align: center;
+    color: var(--text-color); /* White text for contrast */
+    font-family: 'Press Start 2P', cursive; /* Apply the same font */
+    font-size: 1.2rem; /* Slightly smaller than the game name */
+    font-weight: bold; /* Bold for emphasis */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+    text-shadow: var(--text-shadow-1); /* Subtle shadow for depth */
+    transform: scale(1); /* Initial scale */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight box shadow for a raised effect */
+}
+
+.navItems:hover {
+    background-color: var(--link-hover-color); /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: aqua; /* Change text color on hover */
+    transition: all 0.5s ease; /* Smooth transition */
+    letter-spacing: 2px; /* Slight letter spacing on hover */
+    box-shadow: 3px 3px 12px rgba(0, 255, 255, 5); /* Brighten text shadow */
+
+}
+
+
+
+
+
+
+
+
+
+

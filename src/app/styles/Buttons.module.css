@@ -1,0 +1,28 @@
+.allButtons {
+    background-color: rgb(162, 162, 162);
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
+
+.cookie img{
+    border-radius: 50%;
+    background-color: rgb(91, 6, 99);
+    padding: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+    transition: transform 0.1s;
+    border: 3px solid black;
+
+}
+
+.cookieScaled {
+    transform: scale(1.05);
+}
+
+.cookie img:hover {
+    box-shadow: 1px 1px 3px 3px rgb(80, 40, 81);
+    transition: .2s;
+}
+

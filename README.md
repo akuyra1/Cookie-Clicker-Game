@@ -9,10 +9,13 @@ A game where each time a cookie on the screen is clicked, a cookie counter incre
 
 
 3. Primary Objective/Goal:
-Cookie Counter: Create an incremental counter that increases with each click.
-Progressively More Expensive Manufacturers: Implement a tiered purchasing system where the cost of manufacturers increases with each purchase, motivating users to buy different tiers for economic benefits.
-Upgrades: Allow users to purchase upgrades for manufacturers as they hit specific thresholds in the game.
-Save Functionality: Enable users to save their progress and continue the game without losing their scores upon reloading.
+- Cookie Counter: Create an incremental counter that increases with each click.
+
+- Progressively More Expensive Manufacturers: Implement a tiered purchasing system where the cost of manufacturers increases with each purchase, motivating users to buy different tiers for economic benefits.
+
+- Upgrades: Allow users to purchase upgrades for manufacturers as they hit specific thresholds in the game.
+
+- Save Functionality: Enable users to save their progress and continue the game without losing their scores upon reloading.
 
 Project Structure and Planning
 4. What are the main components or modules of the project?
@@ -26,13 +29,13 @@ Achievements System: Tracks and displays user achievements based on in-game mile
 5. What should the project timeline look like?
 Day 1-2: Core Functionality (Cookie Counter, Click Detection, Simple UI)
     - Started 19.08.2024 at 22:15
-    - Progress : 
-    - Completed : yes / no
+    - Progress : cookie counter - done, click detection - done, Simple UI - in progress.
+    - Completed : yes
 
 Day 3-4: Add Manufacturers and Auto-Increment Logic
-    - Started :
-    - Progress : 
-    - Completed : yes / no
+    - Started : 22.08.2024
+    - Progress :  manufacturers added, auto-increment logic done.
+    - Completed : yes
 
 Day 5: Implement Upgrades and Achievements
     - Started :
