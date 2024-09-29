@@ -1,0 +1,45 @@
+.containers {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    gap: 2rem;
+    /* background-image: url("@/"); */
+}
+
+.upgradesTitle {
+    margin: 1rem auto;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffffb8;
+    background-color: rgba(36, 36, 36, 0.71);
+    box-shadow: var(--box-shadow-1);
+    width: 500px;
+    text-align: center; 
+    border-radius: 1rem;
+    text-shadow: var(--text-shadow-1);
+    cursor: pointer;
+}
+
+.upgradesTitle:hover {
+    transition: .9s;
+    color: rgb(0, 0, 0);
+}
+
+.upgrades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: rgb(127, 167, 127);
+}
+
+.upgradeList {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(96, 133, 176);
+
+}
