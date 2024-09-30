@@ -6,6 +6,11 @@
     text-transform: capitalize;
 }
 
+.allButtons:hover {
+    background-color: rgb(44, 101, 216);
+    transition: .3s;
+}
+
 .cookie img{
     border-radius: 50%;
     background-color: rgb(91, 6, 99);
@@ -25,4 +30,34 @@
     box-shadow: 1px 1px 3px 3px rgb(80, 40, 81);
     transition: .2s;
 }
+
+.resetButton {
+    color: #fff;
+    background-color: rgb(132, 1, 1);
+    padding: 5px;
+    height: inherit;
+    align-self: center;
+    border-radius: 1rem;
+    width: 150px;
+    font-size: 1.2rem;
+    box-shadow: var(--box-shadow-1);
+}
+
+.resetButton:hover {
+    background-color: red;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

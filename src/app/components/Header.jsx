@@ -1,5 +1,9 @@
+'use client'
 import React from 'react'
 import headerContainerStyles from '@/app/styles/Header.module.css'
+import HoverButton from './Button'
+import buttonStyles from '@/app/styles/Buttons.module.css'
+
 
 export default function Header() {
 
@@ -14,6 +18,8 @@ export default function Header() {
             <li className={headerContainerStyles.navItems}><a href='/'>Stats</a></li>
             <li className={headerContainerStyles.navItems}><a href='/'>Game Info</a></li>
             <li className={headerContainerStyles.navItems}><a href='/'>About</a></li>
+            <HoverButton className={buttonStyles.resetButton} text='Reset Game'/>
+            {/* <button className={buttonStyles.resetButton}>aaa</button> */}
           </ul>
         </div>
       </div>

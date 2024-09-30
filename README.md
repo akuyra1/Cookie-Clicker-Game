@@ -17,6 +17,10 @@ A game where each time a cookie on the screen is clicked, a cookie counter incre
 
 - Save Functionality: Enable users to save their progress and continue the game without losing their scores upon reloading.
 
+- Create some Mini - Games in the cookie clicker game, e.g. You use biscuits to buy some sort of cookie eating soldiers and then you can send them to fight monsters for rewards.
+
+
+
 Project Structure and Planning
 4. What are the main components or modules of the project?
 Cookie Manufacturers: Auto-incrementing systems that can be purchased by the user.
