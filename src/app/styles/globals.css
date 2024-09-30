@@ -10,12 +10,14 @@
     --accent-color: rgba(0, 255, 255, 0.7);       /* Electric Blue */
     --hover-color: #ff007f;        /* Neon Pink */
     --highlight-color: #ffd700;    /* Bright Yellow */
-    --background-color: #1a001f;   /* Dark background */
+    --background-color: rgb(36, 36, 36);   /* Dark background */
     --text-color: #ffffff;         /* White Text */
     --link-color: #00ffff;         /* Link Color */
     --link-hover-color: rgba(0, 0, 0, 0.7);   /* Hover Color for Links */
     --box-shadow-1 : 10px 10px 10px rgba(36, 36, 36, 0.906); 
     --text-shadow-1 : 2px 2px 8px aqua; /* Subtle shadow for depth */
+    --button : rgb(194, 194, 241);
+    --numbers : rgb(133, 128, 211);
 
   }
 
@@ -34,10 +36,13 @@ body {
 
 
 .mainContainer {
-    background-color: red;
+    background-color: rgba(106, 96, 96, 0.215);
+    width: 15%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    /* justify-content: center !important;  */
     align-items: center;
+    color: #fff;
 }
 

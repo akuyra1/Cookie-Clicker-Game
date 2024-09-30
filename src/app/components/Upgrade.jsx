@@ -1,9 +1,9 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import containerStyles from '@/app/styles/Sections.module.css';
+import HoverButton from './Button';
 
-
-export default function Upgrade({count, setCount, cps, setCps}) {
+export default function Upgrade({count, setCount, cps, setCps, text}) {
   const [upgrades, setUpgrades] = useState([]); // State to hold the fetched data
   const [loading, setLoading] = useState(true); // State to manage loading state
   const [error, setError] = useState(null); // State to handle errors
@@ -81,15 +81,15 @@ export default function Upgrade({count, setCount, cps, setCps}) {
 
   return (
     <div className={containerStyles.containers}>      
-      <h1 className={containerStyles.upgradesTitle}>Cookie Upgrades</h1>
       <ul className={containerStyles.upgrades}>
+      <h1 className={containerStyles.upgradesTitle}>Cookie Manufacturers</h1>
         {upgrades.map((upgrade) => (
           <li key={upgrade.id} className={containerStyles.upgradeList}>
-            <h2>{upgrade.name}</h2>
-            <p>Cost: {upgrade.cost}</p>
-            <p>Cps + {upgrade.increase} cps</p>
-            <h2>Qty Owned: {autoClickers[upgrade.id] || 0}</h2>
-            <button onClick={() => handlePurchase(upgrade)}>Buy</button>
+            <h2 className={containerStyles.upgradeName}>{upgrade.name}</h2>
+            <p className={containerStyles.upgradeCost}>Cost: <span className={containerStyles.upgradeNumbers}>{upgrade.cost}</span></p>
+            <p className={containerStyles.upgradeCps}>Cps + <span className={containerStyles.upgradeNumbers}>{upgrade.increase} cps</span></p>
+            <h2 className={containerStyles.upgradeQty}>Qty Owned: <span className={containerStyles.upgradeNumbers}>{autoClickers[upgrade.id] || 0}</span></h2>
+            <HoverButton text="Buy" onClick={() => handlePurchase(upgrade)} className={containerStyles.buyButton}/>
           </li>
         ))}
       </ul>
