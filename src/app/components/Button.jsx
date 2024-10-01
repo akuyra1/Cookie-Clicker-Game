@@ -8,12 +8,15 @@ export default function HoverButton({ text, onClick, className }) {
   useEffect(() => {
     hoverSoundRef.current = new Audio('/sounds/buttonHover.ogg');
     hoverSoundRef.current.volume = 0.5;
-  }, []); // The empty dependency array ensures this runs only once on mount
+    hoverSoundRef.current.load(); // Preload the sound to avoid delays
+  }, []);
 
   // Function to play the sound
   const playHoverSound = () => {
     if (hoverSoundRef.current) {
-      hoverSoundRef.current.play();
+      hoverSoundRef.current.pause(); // Stop any current playback
+      hoverSoundRef.current.currentTime = 0; // Reset to start
+      hoverSoundRef.current.play(); // Play the sound
     }
   };
 
@@ -21,7 +24,7 @@ export default function HoverButton({ text, onClick, className }) {
     <button
       onMouseOver={playHoverSound} // Trigger sound on hover
       onClick={onClick} // Pass the onClick prop to the button
-      className={`${buttonStyles.allButtons} ${className}`} // Merge the passed className with default styles
+      className={`${buttonStyles.allButtons} ${className || ''}`} // Merge the passed className with default styles
     >
       {text}
     </button>

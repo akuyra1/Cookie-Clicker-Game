@@ -35,14 +35,3 @@ body {
 }
 
 
-.mainContainer {
-    background-color: rgba(106, 96, 96, 0.215);
-    width: 15%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center !important;  */
-    align-items: center;
-    color: #fff;
-}
-
