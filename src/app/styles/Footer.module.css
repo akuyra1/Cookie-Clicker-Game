@@ -1,0 +1,17 @@
+.container {
+    position: absolute;
+    bottom: 0;
+    color: rgb(8, 148, 158);
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.231);
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerP {
+    margin-left: 1rem;
+}

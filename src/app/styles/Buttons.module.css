@@ -8,8 +8,7 @@
 
 .allButtons:hover {
     background-color: rgb(44, 101, 216);
-    transition: .3s
-    ;
+    transition: .3s;
 }
 
 .cookie img{

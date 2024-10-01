@@ -86,9 +86,12 @@
     position: absolute;
     bottom: 15px;
     box-shadow: 1px 1px 15px #7e7070;
-
+    transition: transform 0.8s ease; /* Apply transition to the base state */
 }
 
+.buyButton:hover {
+    transition: 1s;
+}
 
 
 /* --------------------------------Cookie counter section--------------------------- */

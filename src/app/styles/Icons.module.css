@@ -1,0 +1,13 @@
+.icons {
+    margin: 5px;
+    margin-left: 1rem;
+    color: rgb(8, 148, 158);
+    transition: transform 0.8s ease; /* Apply transition to the base state */
+}
+
+.icons:hover {
+    color: rgb(98, 48, 126);
+    transform: translateY(-.2rem);
+    transition: .6s;
+
+}

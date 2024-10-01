@@ -16,7 +16,7 @@ export default function Header() {
         </button>
         <ul className={headerContainerStyles.navItemsList}>
           <li className={headerContainerStyles.navItems}><a href='/'>Stats</a></li>
-          <li className={headerContainerStyles.navItems}><a href='/'>Game Info</a></li>
+          <li className={headerContainerStyles.navItems}><a href='/'>Game Rules</a></li>
           <li className={headerContainerStyles.navItems}><a href='/'>About</a></li>
           <HoverButton onClick={resetGame} className={buttonStyles.resetButton} text='Reset Game' />
         </ul>
