@@ -54,29 +54,31 @@ export default function Upgrade({ count, setCount, cps, setCps }) {
   };
 
   return (
-    <div className={containerStyles.containers}>
-      <ul className={containerStyles.upgrades}>
-        <h1 className={containerStyles.upgradesTitle}>Cookie Manufacturers</h1>
-        {upgrades.map((upgrade) => (
-          <li key={upgrade.id} className={containerStyles.upgradeList}>
-            <h2 className={containerStyles.upgradeName}>{upgrade.name}</h2>
-            <p className={containerStyles.upgradeCost}>
-              Cost: <span className={containerStyles.upgradeNumbers}>{upgrade.cost}</span>
-            </p>
-            <p className={containerStyles.upgradeCps}>
-              Cps + <span className={containerStyles.upgradeNumbers}>{upgrade.increase} cps</span>
-            </p>
-            <h2 className={containerStyles.upgradeQty}>
-              Qty Owned: <span className={containerStyles.upgradeNumbers}>{autoClickers[upgrade.id] || 0}</span>
-            </h2>
-            <HoverButton
-              text="Buy"
-              onClick={() => handlePurchase(upgrade)}
-              className={containerStyles.buyButton}
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className={containerStyles.containers}>
+        <ul className={containerStyles.upgrades}>
+          <h1 className={containerStyles.upgradesTitle}>Cookie Manufacturers</h1>
+          {upgrades.map((upgrade) => (
+            <li key={upgrade.id} className={containerStyles.upgradeList}>
+              <h2 className={containerStyles.upgradeName}>{upgrade.name}</h2>
+              <p className={containerStyles.upgradeCost}>
+                Cost: <span className={containerStyles.upgradeNumbers}>{upgrade.cost}</span>
+              </p>
+              <p className={containerStyles.upgradeCps}>
+                Cps + <span className={containerStyles.upgradeNumbers}>{upgrade.increase} cps</span>
+              </p>
+              <h2 className={containerStyles.upgradeQty}>
+                Qty Owned: <span className={containerStyles.upgradeNumbers}>{autoClickers[upgrade.id] || 0}</span>
+              </h2>
+              <HoverButton
+                text="Buy"
+                onClick={() => handlePurchase(upgrade)}
+                className={containerStyles.buyButton}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }

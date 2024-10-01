@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+* {
+  box-sizing: border-box;
+}
+
 /* styles/globals.css */
 :root {
     --primary-color: #2e004f;      /* Dark Purple */

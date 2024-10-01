@@ -2,8 +2,8 @@
 import React, { useState, useEffect, useContext, useMemo, useCallback } from 'react';
 import Image from 'next/image';
 import buttons from '@/app/styles/Buttons.module.css';
-import Upgrade from './components/Upgrade';
 import counterStyles from '@/app/styles/Sections.module.css';
+import Upgrade from './components/Upgrade';
 import GameContext from './contexts/GameContext'; // Consistent naming
 
 // Helper function to format numbers
@@ -34,28 +34,28 @@ export default function Home() {
   };
 
   return (
-    <main className={counterStyles.mainContainer}>
-      <Upgrade count={count} setCount={setCount} cps={cps} setCps={setCps} className='upgradesContainer' />
+    <>
+      <Upgrade count={count} setCount={setCount} cps={cps} setCps={setCps}/>
+      <div className={counterStyles.mainContainer}>
 
-      <h1 className={counterStyles.counterTitle}>
-        Cookies <br></br><span className={counterStyles.counterSpan}>{formattedCount}</span>
-      </h1>
-      <h2 className={counterStyles.counterCps}>
-        Your Cookies per second is: <span className={counterStyles.counterSpan}>{formattedCps}</span>
-      </h2>
+        <h1 className={counterStyles.counterTitle}>
+          Cookies <br></br><span className={counterStyles.counterSpan}>{formattedCount}</span>
+        </h1>
+        <h2 className={counterStyles.counterCps}>
+          Cookies per second <br></br> <span className={counterStyles.counterCpsSpan}>{formattedCps}</span>
+        </h2>
 
-      <button onClick={incrementCount} className={buttons.cookie}>
-        <Image
-          src='/images/cookie.jpg'
-          alt="Image of a cookie"
-          width={200}
-          height={200}
-          className={isScaled ? buttons.cookieScaled : ""}
-          onClick={handleImageClick}
-        />
-      </button>
-
-      {/* <button onClick={resetGame} className={buttons.resetButton}>Reset Game</button> */}
-    </main>
+        <button onClick={incrementCount} className={buttons.cookie}>
+          <Image
+            src='/images/cookie.jpg'
+            alt="Image of a cookie"
+            width={200}
+            height={200}
+            className={isScaled ? buttons.cookieScaled : ""}
+            onClick={handleImageClick}
+          />
+        </button>
+      </div>
+    </>
   );
 }
