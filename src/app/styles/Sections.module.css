@@ -1,10 +1,6 @@
 .containers {
     display: flex;
-    /* flex-direction: row;  */
-    /* background-color: red; */
-    /* margin-left: 15rem; */
     margin-top: 0;
-    /* margin-bottom: 5rem; */
 }
 
 .upgradesTitle {
@@ -31,7 +27,6 @@
     padding: 1rem;
     background-color: rgba(16, 14, 21, 0.486);
     opacity: 95%;
-
 }
 
 .upgradeList {
@@ -46,8 +41,6 @@
     border-radius: 5px;
     box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.717);
     transition: transform 0.8s ease; /* Apply transition to the base state */
-
-
 }
 
 .upgradeList:hover {
@@ -105,7 +98,6 @@
     border-radius: 2rem;
     margin: 1rem auto;
     opacity: 85%;
-
 }
 
 .counterTitle {
@@ -128,7 +120,7 @@
 }
 
 .counterCpsSpan {
-    margin-left: 4rem;
+    margin-left: 3.5rem;
     font-size: 2rem;
     font-weight: bold;
     color: #0a6911;

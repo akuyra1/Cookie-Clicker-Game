@@ -21,7 +21,7 @@ export default function SocialMediaIcons() {
       <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
         <FaLinkedin className={IconStyles.icons}/>
       </a>
-      <a href="https://www.github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/akuyra1" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
         <FaGithub className={IconStyles.icons}/>
       </a>
     </div>

@@ -3,6 +3,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import containerStyles from '@/app/styles/Sections.module.css';
 import HoverButton from './Button';
 import UserContext from '../contexts/GameContext';
+import Image from 'next/image';
+
+
 
 export default function Upgrade({ count, setCount, cps, setCps }) {
   const { autoClickers, setAutoClickers } = useContext(UserContext); // Access autoClickers from context
@@ -55,9 +58,17 @@ export default function Upgrade({ count, setCount, cps, setCps }) {
 
   return (
     <>
+      {/* <Image 
+        src="/images/cookieOven2.webp" 
+        width={100} 
+        height={100} 
+        alt="A sample image"
+      /> */}
       <div className={containerStyles.containers}>
         <ul className={containerStyles.upgrades}>
           <h1 className={containerStyles.upgradesTitle}>Cookie Manufacturers</h1>
+
+
           {upgrades.map((upgrade) => (
             <li key={upgrade.id} className={containerStyles.upgradeList}>
               <h2 className={containerStyles.upgradeName}>{upgrade.name}</h2>
